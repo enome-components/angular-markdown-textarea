@@ -1,5 +1,4 @@
 .markdown-textarea .textarea-container {
-  display: inline-block;
   position: relative;
 }
 .markdown-textarea .textarea-container > button {
