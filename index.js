@@ -8,9 +8,8 @@ module.directive('markdownTextarea', function () {
     restrict: 'E',
     template: require('./template'),
     replace: true,
-    scope: { data: '=' },
+    scope: { data: '=', fileserver: '=' },
     link: function (scope, el, attr) {
-      scope.fileserver = attr.fileserver;
 
       scope.$watch('show_editor', function (v) {
         if (v) {
