@@ -11,6 +11,15 @@ module.directive('markdownTextarea', function () {
     scope: { data: '=' },
     link: function (scope, el, attr) {
       scope.fileserver = attr.fileserver;
+
+      scope.$watch('show_editor', function (v) {
+        if (v) {
+          window.document.body.style.overflow = 'hidden';
+          return;
+        }
+
+        window.document.body.style.overflow = 'inherit';
+      });
     },
     controller: function ($scope) {
       $scope.show_editor = false;
