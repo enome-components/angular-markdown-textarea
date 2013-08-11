@@ -1,8 +1,8 @@
-var module = window.angular.module('markdown-textarea', [
+var mod = window.angular.module('markdown-textarea', [
   require('angular-markdown-editor')
 ]);
 
-module.directive('markdownTextarea', function () {
+mod.directive('markdownTextarea', function () {
 
   return {
     restrict: 'E',
