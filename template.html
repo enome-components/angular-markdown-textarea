@@ -1,11 +1,11 @@
 <div class='markdown-textarea'>
   <div class='textarea-container'>
-    <button ng-click='toggle()' title='Show fullscreen editor'><i class='icon-resize-full'></i></button>
+    <button type='button' ng-click='toggle()' title='Show fullscreen editor'><i class='icon-resize-full'></i></button>
     <textarea ng-model='data'></textarea>
   
   </div>
   <div class='overlay' ng-show='show_editor'>
-    <button ng-click='toggle()' title='Hide fullscreen editor'><i class='icon-resize-small'></i></button>
+    <button type='button' ng-click='toggle()' title='Hide fullscreen editor'><i class='icon-resize-small'></i></button>
     <markdown-editor data='data' fileserver='fileserver' />
   </div>
 </div>
